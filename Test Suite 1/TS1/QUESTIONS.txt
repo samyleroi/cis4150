@@ -1,0 +1,26 @@
+SAMUEL UCHE 0871392
+
+
+Question 1: How many different variables do you need to control?
+-3 different variables: 
+ -The length if the line
+ -The length of the tag
+ -The number of words in a file
+
+Question 2: What are the partitions of each variable?
+-0-128
+-0-32
+-0-150000
+
+Question 3: What are the normal test values for each variable?
+64 characters in line
+16 characters in tag
+75000 words in the file
+
+Question 4: What are the robust test values for each variable?
+-129 characters in line
+-33 characters in tag
+-150,001 words in file
+-1 character in line
+-1 character in tag
+-1 word in file

@@ -1,0 +1,9 @@
+FILES:
+gpalib
+testcases.c
+makefile
+LAB2-DESIGN
+
+type make, then run ./runAllTests
+
+We did 6 test cases.

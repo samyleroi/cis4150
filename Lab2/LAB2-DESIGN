@@ -1,0 +1,113 @@
+Names ansd ID:
+
+-Samuel Uche 0871392
+
+-David Dimaria 0838951
+
+
+
+Our class partitions are the integer ranges for each letter grad .e.g. 53-56 is a 'D'
+
+ 
+
+Weak normal equivalence class testing Test Cases:
+
+- Result Grade 
+
+     A     86       
+
+     A+    96
+
+     A-    82
+
+     B+    78
+
+     B     74
+
+     B-    71
+
+     C+    68
+
+     C     64
+
+     C-    61
+
+     D+    58
+
+     D     54
+
+     D-    51
+
+Additional values required to make our �weak normal� list into a �strong normal� list:
+
+-There are no additional values because the weak normal is the same as the strong normal since there is 
+
+only one variable.
+
+     
+
+List of values that will allow us to construct a fullset of edge test cases:
+
+-  Result   Grade       
+
+     NULL  101  
+
+     A+    100
+
+     A+    90
+
+     A	   89
+
+     A	   85
+
+     A-    84
+
+     A-	   80
+
+     B+    79
+
+     B+    77
+
+     B     76
+
+     B     74
+
+     B-    72
+
+     B-    70
+
+     C+    69
+
+     C+    67
+
+     C     66
+
+     C     63
+
+     C-    62
+
+     C-    60
+
+     D+    59  
+
+     D+    57
+
+     D     56
+
+     D     53
+
+     D-    52
+
+     D-    50
+
+     F     49
+
+     F     0 
+
+     NULL  -1
+
+
+
+Number of Tests completed:
+
+6 tests completed.

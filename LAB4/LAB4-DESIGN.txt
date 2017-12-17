@@ -1,0 +1,35 @@
+LAB4-DESIGN
+CIS*4150
+Adam Reid   0835558
+Sam Uche    0871392
+
+2.1 Task 1
+Model
+For our model, we would like to create a class that simulates what is being done with the GPAcalculator, and GPAconversion classes
+We will design methods within our class that convert letters and grades to a GPA value. Furthermore, we will allow our model to calculate overall GPA and term GPA.
+
+To calculate GPA values, we would simply need to add all of the GPA values entered, and divide them by the number of GPA values entered.
+This is similar with term GPA, but we would only be summing and counting the GPA values for the term specified, rather than the entire set of values.
+
+With this model that we have created, we will enter in sets test values into both the GPAcalculator model and our model. Then, we will calculate both the overall GPA and term GPA with the various sets.
+If the resulting GPA values from each of the methods are the same, then we can confidently say that the GPAcalculator model is returning valid data.
+
+
+2.2 Task 2
+For the tests, we chose to use a combination of boundary valued and edge test cases for the conversions. 
+We are testing the high values of the GPA conversion using numbers such as 100, 99, and 98 as well as low values of the GPA conversion such as 0, 49, 50, 51, etc.
+Furthermore, we are testing the edge cases for the grade associated with distinct letters, such as 91, 90, and 89 for the letter "A".
+
+Along with the numeric conversions to letter grades, we also did the same with the other conversion methods contained in the GPAconversion class, such as converting letters to GPA values, and convertin numbers to GPA values.
+For these tests, we also used boundary and edge test cases.
+
+We ensured that we were testing nominal values as well to ensure correctness in areas other than the boundaries.
+
+
+2.3 Task 3
+For creating the model for evaluating the GPAcalculator class, we wanted to ensure that we were creating a class that would accurately predict GPA values based on a set of values.
+For reference, we used the standard for GPA calculations (from lab 2) to create the logic in our class to correctly convert grades, and calculate GPA values based on the entered data.
+
+To compare the results of the model we're testing with our model, we enter the exact same values into both test models, and we compare the results when we perform the equivallent functions on each of the objects.
+If the resulting values are equal, we can confidently say that the GPAcalculator class is correctly calculating GPA values.
+If the resulting values differ, this means that there must be an issue with one of the classes, in which case both need to be investigated further to identify the issue.

@@ -1,0 +1,58 @@
+Task 2.1: du-path calculation: gpaSummation
+
+
+Longest definition clear du path
+
+We have DEF(gpaSummation,101) , DEF(gpaSummation,123), USE(gpaSummation,120), USE(gpaSummation,123), USE(gpaSummation,126). 
+
+So, there are a total of 6 du paths. The longest definition clear path is:
+P1: “lines 101 through 120”
+
+Longest du path of any sort
+
+Since the path above omitted the internal definition specified in line 123 for definition clear, this line will now be included along with the subsequent following usage lines for the longest path. 
+
+P2: <P1,121, 123, 121, 126>
+
+Task 2.2: slice calculation: gpaSummation
+
+For the slice S(V,n), if a statement fragment n is a defining node for v, then n is included in the slice. If statement fragment n is a usage node for v, then n is not included in the slice. If a statement is both a defining and a usage node, then it is included in the slice.
+
+Based on this, the backward slice is:
+
+S(gpaSummation,126) = {101, 120, 121, 123}
+Task 2.1: du-path calculation: nCourses
+
+Longest definition clear du path
+
+In this case, nCourses belongs to the struct of StudentGPAInfo which is initialized at line 18 but this is not part of the scope of our function getTermGPA. Hence, the definition starting point will be line 98 because the struct (info) is passed to the function that includes the variable nCourses. 
+
+P1: “lines 98 through 126”
+
+Longest du path of any sort
+
+The initialization at line 18 is the first definition use for the struct StudentGPAInfo which includes nCourses. But, since the question only asks for usage within the scope of getTermGPA function, the path is the same as above (if it didn’t care about the scope to be within getTermGPA, it would be something like P2: <18,20,21,23,P1> ). 
+
+P1: “lines 98 through 126”
+
+Task 2.2: slice calculation: nCourses
+
+126 is the last usage line of nCourses in the getTermGPA. 
+
+S(nCourses,126) = {15,17,18,20,21,23,98,121,123}
+
+Task 3:
+
+gpaSummation
+
+The method of testing is “All-Defs” since our definition clear du path is: “lines 101 through 120”. We will be testing the value from defining node (101) to some use i.e. node 120 hence checking the traversal of the path with the given data value. The data value used is: 86 and 98.
+
+
+nCourses
+
+The method of testing for nCourses slice will be “All Uses” for the slice that we have defined at point n (line 126, i.e. the last usage). This is because to provide the struct StudentGPAInfo, we need to call another function in order to initialize. The data value used is: 86,78 and 94 for percentage grade.
+
+
+
+
+
